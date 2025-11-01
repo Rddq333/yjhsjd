@@ -1,0 +1,239 @@
+/* ipImage.less - IP形象页面样式 */
+
+.ip-image-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  padding-top: calc(var(--height, 44px) + env(safe-area-inset-top));
+  padding-bottom: 40rpx;
+}
+
+/* 页面头部 */
+.page-header {
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+
+.header-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(200, 0, 0, 0.85) 0%, rgba(160, 0, 0, 0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  padding: 0 32rpx;
+}
+
+.header-icon {
+  font-size: 64rpx;
+  margin-bottom: 24rpx;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 40rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.header-desc {
+  font-size: 24rpx;
+  opacity: 0.9;
+  display: block;
+}
+
+/* IP展示区 */
+.ip-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48rpx 32rpx;
+  background-color: #FFFFFF;
+  margin: 32rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.ip-main-image {
+  width: 400rpx;
+  height: 400rpx;
+  margin-bottom: 24rpx;
+}
+
+.ip-name {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #C80000;
+  margin-bottom: 12rpx;
+}
+
+.ip-subtitle {
+  font-size: 28rpx;
+  color: #666666;
+}
+
+/* IP介绍区域 */
+.ip-intro-section {
+  padding: 0 32rpx 48rpx;
+}
+
+.section-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #C80000;
+  margin-bottom: 24rpx;
+  padding-left: 16rpx;
+  border-left: 6rpx solid #C80000;
+}
+
+.intro-card {
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.intro-text {
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 1.8;
+  display: block;
+}
+
+/* 形象展示区域 */
+.ip-gallery-section {
+  padding: 0 32rpx 48rpx;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  padding: 24rpx;
+}
+
+.gallery-title {
+  font-size: 28rpx;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* 应用场景区域 */
+.ip-scene-section {
+  padding: 0 32rpx 48rpx;
+}
+
+.scene-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+
+.scene-item {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.scene-image {
+  width: 240rpx;
+  height: 180rpx;
+  flex-shrink: 0;
+}
+
+.scene-info {
+  flex: 1;
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scene-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.scene-desc {
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 1.6;
+  display: block;
+}
+
+/* IP周边产品区域 */
+.ip-products-section {
+  padding: 0 32rpx 48rpx;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+}
+
+.product-item {
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+  width: 100%;
+  height: 280rpx;
+}
+
+.product-name {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+  display: block;
+  padding: 24rpx;
+  text-align: center;
+}
+

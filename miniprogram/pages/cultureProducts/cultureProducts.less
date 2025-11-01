@@ -1,0 +1,195 @@
+/* cultureProducts.less - 文创情怀页面样式 */
+
+.culture-products-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  padding-top: calc(var(--height, 44px) + env(safe-area-inset-top));
+  padding-bottom: 40rpx;
+}
+
+/* 页面头部 */
+.page-header {
+  position: relative;
+  width: 100%;
+  height: 320rpx;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+}
+
+.header-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(200, 0, 0, 0.85) 0%, rgba(160, 0, 0, 0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  padding: 0 32rpx;
+}
+
+.header-icon {
+  font-size: 64rpx;
+  margin-bottom: 24rpx;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 40rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.header-desc {
+  font-size: 24rpx;
+  opacity: 0.9;
+  display: block;
+}
+
+.header-title {
+  font-size: 56rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.header-subtitle {
+  font-size: 28rpx;
+  opacity: 0.9;
+  display: block;
+}
+
+/* 分类标签 */
+.category-tabs {
+  display: flex;
+  padding: 24rpx 32rpx;
+  background-color: #FFFFFF;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.tab-item {
+  padding: 12rpx 32rpx;
+  margin-right: 16rpx;
+  border-radius: 32rpx;
+  background-color: #F5F5F5;
+  color: #666666;
+  font-size: 28rpx;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.tab-item.active {
+  background-color: #C80000;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* 产品网格 */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+  padding: 32rpx;
+}
+
+.product-item {
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.product-item:active {
+  transform: translateY(-4rpx);
+  box-shadow: 0 8rpx 16rpx rgba(200, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 320rpx;
+}
+
+.product-info {
+  padding: 24rpx;
+}
+
+.product-name {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333333;
+  display: block;
+  margin-bottom: 8rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-desc {
+  font-size: 24rpx;
+  color: #999999;
+  display: block;
+  margin-bottom: 16rpx;
+  line-height: 1.4;
+  height: 68rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #C80000;
+}
+
+.product-tag {
+  background-color: #FF6B6B;
+  color: #FFFFFF;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  font-size: 20rpx;
+}
+
+/* 空状态 */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120rpx 0;
+}
+
+.empty-icon {
+  width: 200rpx;
+  height: 200rpx;
+  opacity: 0.3;
+  margin-bottom: 24rpx;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #999999;
+}
+

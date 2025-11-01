@@ -1,0 +1,82 @@
+/**app.wxss**/
+/* 全局样式 - 永嘉红十三军基地小程序 */
+
+/* 主题色定义 */
+:root {
+  --primary-red: #C80000;        /* 主题红色 */
+  --dark-red: #A00000;            /* 深红色 */
+  --light-red: #FF6B6B;           /* 浅红色 */
+  --gold: #D4AF37;                /* 金色点缀 */
+  --text-dark: #333333;           /* 深色文字 */
+  --text-light: #666666;          /* 浅色文字 */
+  --bg-light: #F5F5F5;            /* 浅色背景 */
+  --bg-white: #FFFFFF;            /* 白色背景 */
+}
+
+/* 通用容器 */
+.container {
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  padding: 0;
+}
+
+/* 页面容器 */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  padding-bottom: 40rpx;
+}
+
+/* 红色主题按钮 */
+.btn-primary {
+  background-color: var(--primary-red);
+  color: #FFFFFF;
+  border-radius: 8rpx;
+  padding: 24rpx 48rpx;
+  font-size: 32rpx;
+  text-align: center;
+  border: none;
+}
+
+.btn-primary:active {
+  background-color: var(--dark-red);
+}
+
+/* 卡片样式 */
+.card {
+  background-color: var(--bg-white);
+  border-radius: 16rpx;
+  padding: 32rpx;
+  margin: 24rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 标题样式 */
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: var(--primary-red);
+  margin: 32rpx 0 24rpx 32rpx;
+}
+
+.subtitle {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 24rpx 0 16rpx 32rpx;
+}
+
+/* 文字样式 */
+.text-content {
+  font-size: 28rpx;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+/* 分割线 */
+.divider {
+  height: 2rpx;
+  background-color: #E5E5E5;
+  margin: 32rpx 0;
+} 

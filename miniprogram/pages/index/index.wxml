@@ -1,0 +1,72 @@
+<!--index.wxml - 首页：展示五大功能模块入口 -->
+<navigation-bar title="永嘉红十三军基地" back="{{false}}" color="white" background="#C80000"></navigation-bar>
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="index-container">
+    <!-- 轮播图区域 -->
+    <view class="banner-section">
+      <swiper class="banner-swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}">
+        <swiper-item>
+          <image class="banner-image" src="/images/banner1.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="banner-image" src="/images/banner2.jpg" mode="aspectFill"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="banner-image" src="/images/banner3.jpg" mode="aspectFill"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <!-- 功能入口区域 -->
+    <view class="function-grid">
+      <!-- 本地介绍 -->
+      <view class="function-item" bindtap="navigateToLocalIntro">
+        <view class="function-icon-wrapper">
+          <image class="function-icon" src="/images/icon-local.png" mode="aspectFit"></image>
+        </view>
+        <text class="function-title">本地介绍</text>
+        <text class="function-desc">永嘉红色文化</text>
+      </view>
+
+      <!-- IP形象 -->
+      <view class="function-item" bindtap="navigateToIPImage">
+        <view class="function-icon-wrapper">
+          <image class="function-icon" src="/images/icon-ip.png" mode="aspectFit"></image>
+        </view>
+        <text class="function-title">IP形象</text>
+        <text class="function-desc">红色文化IP</text>
+      </view>
+    </view>
+
+    <!-- 底部导航栏功能提示 -->
+    <view class="tabbar-tips">
+      <view class="tips-title">更多功能</view>
+      <view class="tips-desc">可通过底部导航栏快速访问：红色记忆、VR云游、文创情怀</view>
+    </view>
+
+    <!-- 特色内容展示区 -->
+    <view class="feature-section">
+      <view class="section-title">
+        <text class="title-text">红色文化</text>
+        <text class="title-subtitle">传承革命精神</text>
+      </view>
+      
+      <view class="feature-card" bindtap="navigateToRedMemory">
+        <image class="feature-image" src="/images/feature1.jpg" mode="aspectFill"></image>
+        <view class="feature-content">
+          <text class="feature-title">红十三军革命历史</text>
+          <text class="feature-desc">深入了解永嘉红十三军的革命历程...</text>
+        </view>
+      </view>
+
+      <view class="feature-card" bindtap="navigateToVRTour">
+        <image class="feature-image" src="/images/feature2.jpg" mode="aspectFill"></image>
+        <view class="feature-content">
+          <text class="feature-title">VR全景游览</text>
+          <text class="feature-desc">身临其境体验红色基地...</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

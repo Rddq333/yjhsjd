@@ -1,0 +1,95 @@
+图片资源清单 - 永嘉红十三军基地小程序
+========================================
+
+【轮播图 - banner/】
+□ banner1.jpg          - 首页轮播图1
+□ banner2.jpg          - 首页轮播图2
+□ banner3.jpg          - 首页轮播图3
+
+【功能图标 - icons/】
+□ icon-memory.png      - 红色记忆图标
+□ icon-vr.png          - VR云游图标
+□ icon-culture.png     - 文创情怀图标
+□ icon-local.png       - 本地介绍图标
+□ icon-ip.png          - IP形象图标
+□ icon-guide.png       - 虚拟讲解图标
+□ icon-vr-play.png     - VR播放图标
+□ icon-phone.png       - 电话图标
+□ icon-location.png    - 位置图标
+
+【底部导航栏图标 - tabbar/】
+□ home.png            - 首页图标（未选中）
+□ home-active.png     - 首页图标（选中）
+□ memory.png          - 红色记忆图标（未选中）
+□ memory-active.png   - 红色记忆图标（选中）
+□ vr.png              - VR云游图标（未选中）
+□ vr-active.png       - VR云游图标（选中）
+□ culture.png         - 文创图标（未选中）
+□ culture-active.png  - 文创图标（选中）
+
+【特色内容图片 - feature/】
+□ feature1.jpg        - 特色内容1（红十三军革命历史）
+□ feature2.jpg        - 特色内容2（VR全景游览）
+
+【历史相关图片 - history/】
+□ history1.jpg        - 历史时间线图片1（1930年红十三军成立）
+□ history2.jpg        - 历史时间线图片2（1931年革命斗争）
+□ history3.jpg        - 历史时间线图片3（1932年战略转移）
+□ history-intro1.jpg  - 历史介绍图片1（革命历史）
+□ history-intro2.jpg  - 历史介绍图片2（文化传承）
+□ history-intro3.jpg  - 历史介绍图片3（教育基地）
+
+【英雄人物头像 - heroes/】
+□ hero1.jpg           - 英雄1头像（胡公冕-红十三军军长）
+□ hero2.jpg           - 英雄2头像（金贯真-红十三军政委）
+□ hero3.jpg           - 英雄3头像（陈文杰-红十三军政治部主任）
+
+【VR场景图片 - vr/】
+□ vr-scene1.jpg       - VR场景1（红十三军纪念馆）
+□ vr-scene2.jpg       - VR场景2（革命遗址）
+□ vr-scene3.jpg       - VR场景3（英雄广场）
+□ vr-scene4.jpg       - VR场景4（文化展厅）
+
+【文创产品图片 - products/】
+□ product1.jpg        - 产品1（红十三军历史画册）
+□ product2.jpg        - 产品2（红色文化T恤）
+□ product3.jpg        - 产品3（革命英雄纪念章）
+□ product4.jpg        - 产品4（红色主题笔记本）
+□ product5.jpg        - 产品5（革命历史文献集）
+□ product6.jpg        - 产品6（红色文化帆布包）
+
+【红色地标图片 - landmarks/】
+□ landmark1.jpg       - 地标1（红十三军纪念馆）
+□ landmark2.jpg       - 地标2（革命英雄纪念碑）
+□ landmark3.jpg       - 地标3（革命遗址）
+□ landmark4.jpg       - 地标4（文化广场）
+
+【IP形象图片 - ip/】
+□ ip-main.png         - IP主形象
+□ ip-1.png            - IP形象1（标准形象）
+□ ip-2.png            - IP形象2（敬礼形象）
+□ ip-3.png            - IP形象3（挥手形象）
+□ ip-4.png            - IP形象4（奔跑形象）
+□ ip-product1.jpg     - IP周边产品1（IP玩偶）
+□ ip-product2.jpg     - IP周边产品2（IP徽章）
+□ ip-product3.jpg     - IP周边产品3（IP贴纸）
+□ ip-product4.jpg     - IP周边产品4（IP明信片）
+
+【IP应用场景图片 - scenes/】
+□ scene1.jpg          - 场景1（宣传海报）
+□ scene2.jpg          - 场景2（文创产品）
+□ scene3.jpg          - 场景3（数字媒体）
+□ scene4.jpg          - 场景4（主题活动）
+
+【页面背景图片 - pages/】
+□ memory-bg.jpg       - 红色记忆页面背景
+□ local-bg.jpg        - 本地介绍页面背景
+
+【通用图片 - common/】
+□ empty.png           - 空状态图片
+
+========================================
+总计：约 50+ 张图片资源
+建议优先准备：轮播图、功能图标、底部导航栏图标、产品图片
+========================================
+

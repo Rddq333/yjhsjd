@@ -1,0 +1,57 @@
+<!--vrTour.wxml - VR云游页面：VR全景浏览链接 -->
+<navigation-bar title="VR云游" homeButton="{{true}}" back="{{false}}" color="white" background="#C80000"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="vr-tour-container">
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <image class="header-bg" src="/images/vr-bg.jpg" mode="aspectFill"></image>
+      <view class="header-overlay">
+        <view class="header-icon">🌐</view>
+        <text class="header-subtitle">身临其境 云游红色基地</text>
+        <text class="header-desc">360度全景体验，感受革命历史</text>
+      </view>
+    </view>
+
+    <!-- VR全景入口 -->
+    <view class="vr-list">
+      <view class="vr-item" wx:for="{{vrList}}" wx:key="index" bindtap="openVRScene" data-url="{{item.url}}" data-title="{{item.title}}">
+        <view class="vr-preview">
+          <image class="vr-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="vr-overlay">
+            <image class="vr-icon" src="/images/icon-vr-play.png" mode="aspectFit"></image>
+            <text class="vr-play-text">开始云游</text>
+          </view>
+        </view>
+        <view class="vr-info">
+          <text class="vr-title">{{item.title}}</text>
+          <text class="vr-desc">{{item.desc}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 使用说明 -->
+    <view class="guide-section">
+      <view class="section-title">使用说明</view>
+      <view class="guide-card">
+        <view class="guide-item">
+          <text class="guide-number">1</text>
+          <text class="guide-text">点击上方VR场景卡片进入全景</text>
+        </view>
+        <view class="guide-item">
+          <text class="guide-number">2</text>
+          <text class="guide-text">滑动屏幕360度浏览场景</text>
+        </view>
+        <view class="guide-item">
+          <text class="guide-number">3</text>
+          <text class="guide-text">点击热点了解详细信息</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 快速体验入口 -->
+    <view class="quick-entry">
+      <button class="btn-primary" bindtap="quickStartVR">快速体验</button>
+    </view>
+  </view>
+</scroll-view>
+

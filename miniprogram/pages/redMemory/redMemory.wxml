@@ -1,0 +1,61 @@
+<!--redMemory.wxml - 红色记忆页面：展示红色历史内容 -->
+<navigation-bar title="红色记忆" homeButton="{{true}}" back="{{false}}" color="white" background="#C80000"></navigation-bar>
+
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="red-memory-container">
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <image class="header-bg" src="/images/memory-bg.jpg" mode="aspectFill"></image>
+      <view class="header-overlay">
+        <view class="header-icon">📜</view>
+        <text class="header-subtitle">革命历史传承</text>
+        <text class="header-desc">铭记历史，传承红色基因</text>
+      </view>
+    </view>
+
+    <!-- 历史时间线 -->
+    <view class="timeline-section">
+      <view class="section-title">革命历程</view>
+      
+      <view class="timeline-item" wx:for="{{historyList}}" wx:key="index">
+        <view class="timeline-dot"></view>
+        <view class="timeline-content">
+          <view class="timeline-date">{{item.year}}</view>
+          <view class="timeline-title">{{item.title}}</view>
+          <view class="timeline-desc">{{item.desc}}</view>
+          <image class="timeline-image" src="{{item.image}}" mode="aspectFill" wx:if="{{item.image}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <!-- 英雄人物 -->
+    <view class="hero-section">
+      <view class="section-title">英雄人物</view>
+      
+      <view class="hero-list">
+        <view class="hero-card" wx:for="{{heroList}}" wx:key="index" bindtap="viewHeroDetail" data-index="{{index}}">
+          <image class="hero-avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+          <view class="hero-info">
+            <text class="hero-name">{{item.name}}</text>
+            <text class="hero-title">{{item.title}}</text>
+            <text class="hero-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 虚拟讲解入口 -->
+    <view class="guide-section">
+      <view class="guide-card" bindtap="startVirtualGuide">
+        <image class="guide-icon" src="/images/icon-guide.png" mode="aspectFit"></image>
+        <view class="guide-content">
+          <text class="guide-title">虚拟讲解</text>
+          <text class="guide-desc">AI智能讲解员为您讲述红色历史</text>
+        </view>
+        <text class="guide-arrow">></text>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

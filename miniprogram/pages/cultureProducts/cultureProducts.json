@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "文创情怀",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}
+

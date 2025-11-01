@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "红色记忆",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}
+

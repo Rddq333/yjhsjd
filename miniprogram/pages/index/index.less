@@ -1,0 +1,161 @@
+/* index.less - 首页样式 */
+
+.index-container {
+  width: 100%;
+  background-color: #F5F5F5;
+  padding-top: calc(var(--height, 44px) + env(safe-area-inset-top));
+  padding-bottom: 40rpx;
+}
+
+/* 轮播图区域 */
+.banner-section {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 32rpx;
+}
+
+.banner-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 功能网格区域 */
+.function-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+  padding: 0 32rpx;
+  margin-bottom: 48rpx;
+}
+
+.function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx 12rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+}
+
+.function-item:active {
+  transform: scale(0.95);
+  background-color: #FFF5F5;
+}
+
+.function-icon-wrapper {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #C80000 0%, #FF6B6B 100%);
+  border-radius: 50%;
+}
+
+.function-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.function-title {
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8rpx;
+}
+
+.function-desc {
+  font-size: 20rpx;
+  color: #999999;
+  text-align: center;
+}
+
+/* 特色内容区域 */
+.feature-section {
+  padding: 0 32rpx;
+}
+
+.section-title {
+  margin-bottom: 24rpx;
+}
+
+.title-text {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #C80000;
+  margin-right: 16rpx;
+}
+
+.title-subtitle {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.feature-card {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  margin-bottom: 24rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+}
+
+.feature-image {
+  width: 240rpx;
+  height: 180rpx;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  flex: 1;
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 12rpx;
+}
+
+.feature-desc {
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* 底部导航栏提示 */
+.tabbar-tips {
+  margin: 32rpx;
+  padding: 32rpx;
+  background: linear-gradient(135deg, rgba(200, 0, 0, 0.05) 0%, rgba(160, 0, 0, 0.05) 100%);
+  border-radius: 16rpx;
+  border: 2rpx solid rgba(200, 0, 0, 0.1);
+}
+
+.tips-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #C80000;
+  margin-bottom: 12rpx;
+  text-align: center;
+}
+
+.tips-desc {
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 1.6;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "IP形象",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}
+

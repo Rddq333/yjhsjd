@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/redMemory/redMemory",
+    "pages/vrTour/vrTour",
+    "pages/cultureProducts/cultureProducts",
+    "pages/localIntro/localIntro",
+    "pages/ipImage/ipImage"
+  ],
+  "window": {
+    "navigationBarTitleText": "永嘉红十三军基地",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#C80000",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#C80000",
+    "selectedColor": "#D4AF37",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/redMemory/redMemory",
+        "text": "红色记忆",
+        "iconPath": "images/memory.png",
+        "selectedIconPath": "images/memory-active.png"
+      },
+      {
+        "pagePath": "pages/vrTour/vrTour",
+        "text": "VR云游",
+        "iconPath": "images/vr.png",
+        "selectedIconPath": "images/vr-active.png"
+      },
+      {
+        "pagePath": "pages/cultureProducts/cultureProducts",
+        "text": "文创",
+        "iconPath": "images/culture.png",
+        "selectedIconPath": "images/culture-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

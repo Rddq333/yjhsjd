@@ -1,0 +1,73 @@
+<!--ipImage.wxml - IP形象页面：红色文化IP形象展示 -->
+<navigation-bar title="IP形象" back="{{true}}" color="white" background="#C80000"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="ip-image-container">
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <image class="header-bg" src="/images/ip-bg.jpg" mode="aspectFill"></image>
+      <view class="header-overlay">
+        <view class="header-icon">🎨</view>
+        <text class="header-subtitle">红色文化IP展示</text>
+        <text class="header-desc">生动形象，传播红色文化</text>
+      </view>
+    </view>
+
+    <!-- IP形象主展示区 -->
+    <view class="ip-showcase">
+      <image class="ip-main-image" src="/images/ip-main.png" mode="aspectFit"></image>
+      <view class="ip-name">小红</view>
+      <view class="ip-subtitle">永嘉红十三军基地IP形象</view>
+    </view>
+
+    <!-- IP介绍 -->
+    <view class="ip-intro-section">
+      <view class="section-title">IP介绍</view>
+      <view class="intro-card">
+        <text class="intro-text">
+          "小红"是永嘉红十三军基地的官方IP形象，以革命战士为原型设计，
+          体现了红色文化的传承与创新。IP形象融合了历史与现代元素，
+          旨在通过生动有趣的方式传播红色文化，吸引更多人了解和学习革命历史。
+        </text>
+      </view>
+    </view>
+
+    <!-- IP形象展示 -->
+    <view class="ip-gallery-section">
+      <view class="section-title">形象展示</view>
+      <view class="gallery-grid">
+        <view class="gallery-item" wx:for="{{ipImages}}" wx:key="index" bindtap="viewImageDetail" data-index="{{index}}">
+          <image class="gallery-image" src="{{item}}" mode="aspectFill"></image>
+          <view class="gallery-overlay">
+            <text class="gallery-title">{{itemNames[index]}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- IP应用场景 -->
+    <view class="ip-scene-section">
+      <view class="section-title">应用场景</view>
+      <view class="scene-list">
+        <view class="scene-item" wx:for="{{scenes}}" wx:key="index">
+          <image class="scene-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="scene-info">
+            <text class="scene-title">{{item.title}}</text>
+            <text class="scene-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- IP周边产品 -->
+    <view class="ip-products-section">
+      <view class="section-title">IP周边</view>
+      <view class="products-grid">
+        <view class="product-item" wx:for="{{ipProducts}}" wx:key="index" bindtap="viewIPProduct">
+          <image class="product-image" src="{{item.image}}" mode="aspectFill"></image>
+          <text class="product-name">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

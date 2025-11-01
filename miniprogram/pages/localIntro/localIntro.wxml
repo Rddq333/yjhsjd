@@ -1,0 +1,88 @@
+<!--localIntro.wxml - 本地介绍页面：永嘉红色文化介绍 -->
+<navigation-bar title="本地介绍" back="{{true}}" color="white" background="#C80000"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="local-intro-container">
+    <!-- 页面头部 -->
+    <view class="page-header">
+      <image class="header-bg" src="/images/local-bg.jpg" mode="aspectFill"></image>
+      <view class="header-overlay">
+        <view class="header-icon">📍</view>
+        <text class="header-subtitle">永嘉红色文化</text>
+        <text class="header-desc">了解红色基地，感受革命情怀</text>
+      </view>
+    </view>
+
+    <!-- 地区概况 -->
+    <view class="intro-section">
+      <view class="section-title">地区概况</view>
+      <view class="content-card">
+        <text class="content-text">
+          永嘉县位于浙江省温州市，是红十三军的发源地。这里承载着深厚的革命历史底蕴，
+          是中国共产党领导下的重要革命根据地之一。永嘉红十三军基地作为红色文化教育基地，
+          传承和弘扬着革命精神，是开展爱国主义教育的重要场所。
+        </text>
+      </view>
+    </view>
+
+    <!-- 历史文化 -->
+    <view class="intro-section">
+      <view class="section-title">历史文化</view>
+      <view class="content-card">
+        <view class="history-item" wx:for="{{historyItems}}" wx:key="index">
+          <view class="history-title">{{item.title}}</view>
+          <text class="history-content">{{item.content}}</text>
+          <image class="history-image" src="{{item.image}}" mode="aspectFill" wx:if="{{item.image}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <!-- 红色地标 -->
+    <view class="intro-section">
+      <view class="section-title">红色地标</view>
+      <view class="landmark-list">
+        <view class="landmark-item" wx:for="{{landmarks}}" wx:key="index">
+          <image class="landmark-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="landmark-info">
+            <text class="landmark-name">{{item.name}}</text>
+            <text class="landmark-desc">{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 交通指南 -->
+    <view class="intro-section">
+      <view class="section-title">交通指南</view>
+      <view class="traffic-card">
+        <view class="traffic-item">
+          <text class="traffic-title">地址</text>
+          <text class="traffic-content">浙江省温州市永嘉县红十三军基地</text>
+        </view>
+        <view class="traffic-item">
+          <text class="traffic-title">公交路线</text>
+          <text class="traffic-content">乘坐XX路公交车至红十三军基地站</text>
+        </view>
+        <view class="traffic-item">
+          <text class="traffic-title">自驾路线</text>
+          <text class="traffic-content">沿XX高速公路行驶，从XX出口下，按路标指引即可到达</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 联系信息 -->
+    <view class="intro-section">
+      <view class="section-title">联系信息</view>
+      <view class="contact-card">
+        <view class="contact-item" bindtap="makePhoneCall">
+          <image class="contact-icon" src="/images/icon-phone.png" mode="aspectFit"></image>
+          <text class="contact-text">联系电话：0577-XXXX-XXXX</text>
+        </view>
+        <view class="contact-item" bindtap="openMap">
+          <image class="contact-icon" src="/images/icon-location.png" mode="aspectFit"></image>
+          <text class="contact-text">查看地图位置</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

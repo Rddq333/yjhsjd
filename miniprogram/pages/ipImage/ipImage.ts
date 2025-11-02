@@ -30,22 +30,30 @@ Component({
       {
         title: '宣传海报',
         desc: '用于红色文化宣传和教育活动',
-        image: '/images/scene1.jpg'
+        image: '',
+        icon: '📋',
+        hasImage: false
       },
       {
         title: '文创产品',
         desc: '印在各类文创产品上，传播红色文化',
-        image: '/images/scene2.jpg'
+        image: '',
+        icon: '🎁',
+        hasImage: false
       },
       {
         title: '数字媒体',
         desc: '在各类数字平台上展示和互动',
-        image: '/images/scene3.jpg'
+        image: '',
+        icon: '📱',
+        hasImage: false
       },
       {
         title: '主题活动',
         desc: '作为主题活动的主视觉形象',
-        image: '/images/scene4.jpg'
+        image: '',
+        icon: '🎪',
+        hasImage: false
       }
     ],
 
@@ -53,19 +61,27 @@ Component({
     ipProducts: [
       {
         name: 'IP玩偶',
-        image: '/images/ip-product1.jpg'
+        image: '',
+        icon: '🧸',
+        hasImage: false
       },
       {
         name: 'IP徽章',
-        image: '/images/ip-product2.jpg'
+        image: '',
+        icon: '🏅',
+        hasImage: false
       },
       {
         name: 'IP贴纸',
-        image: '/images/ip-product3.jpg'
+        image: '',
+        icon: '🏷️',
+        hasImage: false
       },
       {
         name: 'IP明信片',
-        image: '/images/ip-product4.jpg'
+        image: '',
+        icon: '💌',
+        hasImage: false
       }
     ]
   },

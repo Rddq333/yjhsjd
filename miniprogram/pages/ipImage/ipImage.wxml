@@ -53,7 +53,10 @@
       <view class="section-title">应用场景</view>
       <view class="scene-list">
         <view class="scene-item" wx:for="{{scenes}}" wx:key="index">
-          <image class="scene-image" src="{{item.image}}" mode="aspectFill"></image>
+          <image class="scene-image" src="{{item.image}}" mode="aspectFill" wx:if="{{item.hasImage}}"></image>
+          <view class="scene-image scene-placeholder" wx:else>
+            <view class="scene-placeholder-icon">{{item.icon}}</view>
+          </view>
           <view class="scene-info">
             <text class="scene-title">{{item.title}}</text>
             <text class="scene-desc">{{item.desc}}</text>
@@ -67,7 +70,11 @@
       <view class="section-title">IP周边</view>
       <view class="products-grid">
         <view class="product-item" wx:for="{{ipProducts}}" wx:key="index" bindtap="viewIPProduct">
-          <image class="product-image" src="{{item.image}}" mode="aspectFill"></image>
+          <image class="product-image" src="{{item.image}}" mode="aspectFill" wx:if="{{item.hasImage}}"></image>
+          <view class="product-image product-placeholder" wx:else>
+            <view class="product-placeholder-icon">{{item.icon}}</view>
+            <text class="product-placeholder-text">图片暂无</text>
+          </view>
           <text class="product-name">{{item.name}}</text>
         </view>
       </view>

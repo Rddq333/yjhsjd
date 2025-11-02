@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "VR全景",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}
+

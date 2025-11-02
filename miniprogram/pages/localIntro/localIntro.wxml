@@ -41,7 +41,9 @@
       <view class="section-title">红色地标</view>
       <view class="landmark-list">
         <view class="landmark-item" wx:for="{{landmarks}}" wx:key="index">
-          <image class="landmark-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="landmark-image">
+            <view class="landmark-icon">{{item.icon}}</view>
+          </view>
           <view class="landmark-info">
             <text class="landmark-name">{{item.name}}</text>
             <text class="landmark-desc">{{item.desc}}</text>

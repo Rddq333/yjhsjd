@@ -5,15 +5,18 @@
   <view class="index-container">
     <!-- 轮播图区域 -->
     <view class="banner-section">
-      <swiper class="banner-swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}">
+      <swiper class="banner-swiper" indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#C80000" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}">
         <swiper-item>
-          <image class="banner-image" src="/images/banner1.jpg" mode="aspectFill"></image>
+          <image class="banner-image" src="/images/banner1.jpg" mode="aspectFit"></image>
         </swiper-item>
         <swiper-item>
-          <image class="banner-image" src="/images/banner2.jpg" mode="aspectFill"></image>
+          <image class="banner-image" src="/images/banner2.jpg" mode="aspectFit"></image>
         </swiper-item>
         <swiper-item>
-          <image class="banner-image" src="/images/banner3.jpg" mode="aspectFill"></image>
+          <image class="banner-image" src="/images/banner3.jpg" mode="aspectFit"></image>
+        </swiper-item>
+        <swiper-item>
+          <image class="banner-image" src="/images/banner4.jpg" mode="aspectFit"></image>
         </swiper-item>
       </swiper>
     </view>
@@ -53,7 +56,9 @@
       </view>
       
       <view class="feature-card" bindtap="navigateToRedMemory">
-        <image class="feature-image" src="/images/feature1.jpg" mode="aspectFill"></image>
+        <view class="feature-image feature-image-history">
+          <view class="feature-icon-bg">🏛️</view>
+        </view>
         <view class="feature-content">
           <text class="feature-title">红十三军革命历史</text>
           <text class="feature-desc">深入了解永嘉红十三军的革命历程...</text>
@@ -61,7 +66,9 @@
       </view>
 
       <view class="feature-card" bindtap="navigateToVRTour">
-        <image class="feature-image" src="/images/feature2.jpg" mode="aspectFill"></image>
+        <view class="feature-image feature-image-vr">
+          <view class="feature-icon-bg">🥽</view>
+        </view>
         <view class="feature-content">
           <text class="feature-title">VR全景游览</text>
           <text class="feature-desc">身临其境体验红色基地...</text>

@@ -3,6 +3,12 @@
 
 Component({
   data: {
+    // IP形象主展示区图片（轮播用）
+    ipMainImages: [
+      '/images/ip-main.png',
+      '/images/ip-main2.png'
+    ],
+
     // IP形象图片列表
     ipImages: [
       '/images/ip-1.png',

@@ -5,7 +5,9 @@
     "pages/vrTour/vrTour",
     "pages/cultureProducts/cultureProducts",
     "pages/localIntro/localIntro",
-    "pages/ipImage/ipImage"
+    "pages/ipImage/ipImage",
+    "pages/heroDetail/heroDetail",
+    "pages/vrViewer/vrViewer"
   ],
   "window": {
     "navigationBarTitleText": "永嘉红十三军基地",

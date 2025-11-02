@@ -1,0 +1,135 @@
+/* vrViewer.less - VR全景查看器页面样式 */
+
+.vr-viewer-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: calc(var(--height, 44px) + env(safe-area-inset-top));
+}
+
+/* web-view样式 - 占满整个容器 */
+web-view {
+  width: 100%;
+  height: calc(100vh - var(--height, 44px) - env(safe-area-inset-top));
+  display: block;
+}
+
+/* 备用方案样式 */
+.vr-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+  padding: 32rpx;
+}
+
+.fallback-content {
+  width: 100%;
+  max-width: 600rpx;
+  background-color: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 64rpx 48rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fallback-icon {
+  font-size: 120rpx;
+  margin-bottom: 32rpx;
+}
+
+.fallback-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16rpx;
+  display: block;
+  text-align: center;
+}
+
+.fallback-desc {
+  font-size: 28rpx;
+  color: #666666;
+  margin-bottom: 32rpx;
+  line-height: 1.6;
+  display: block;
+  text-align: center;
+}
+
+.link-box {
+  width: 100%;
+  background-color: #F5F5F5;
+  border-radius: 12rpx;
+  padding: 24rpx;
+  margin-bottom: 32rpx;
+}
+
+.link-text {
+  font-size: 24rpx;
+  color: #333333;
+  word-break: break-all;
+  display: block;
+}
+
+.copy-button {
+  width: 100%;
+  padding: 24rpx;
+  background: linear-gradient(135deg, #C80000 0%, #FF6B6B 100%);
+  color: #FFFFFF;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4rpx 12rpx rgba(200, 0, 0, 0.3);
+}
+
+.copy-button::after {
+  border: none;
+}
+
+.try-webview-button {
+  width: 100%;
+  margin-top: 24rpx;
+  padding: 24rpx;
+  background: linear-gradient(135deg, #666666 0%, #999999 100%);
+  color: #FFFFFF;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  border: none;
+}
+
+.try-webview-button::after {
+  border: none;
+}
+
+.button-text {
+  color: #FFFFFF;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.tips-box {
+  margin-top: 32rpx;
+  padding: 24rpx;
+  background-color: #FFF5F5;
+  border-radius: 12rpx;
+  border: 2rpx solid rgba(200, 0, 0, 0.1);
+}
+
+.tips-text {
+  font-size: 24rpx;
+  color: #C80000;
+  line-height: 1.6;
+  display: block;
+  text-align: center;
+}
+

@@ -30,7 +30,11 @@
             wx:key="id"
             bindtap="viewProductDetail" 
             data-product="{{item}}">
-        <image class="product-image" src="{{item.image}}" mode="aspectFill"></image>
+        <image class="product-image" src="{{item.image}}" mode="aspectFill" wx:if="{{item.hasImage}}"></image>
+        <view class="product-image product-placeholder" wx:else>
+          <view class="product-placeholder-icon">{{item.icon}}</view>
+          <text class="product-placeholder-text">图片暂无</text>
+        </view>
         <view class="product-info">
           <text class="product-name">{{item.name}}</text>
           <text class="product-desc">{{item.desc}}</text>

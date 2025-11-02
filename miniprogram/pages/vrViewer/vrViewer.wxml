@@ -1,0 +1,8 @@
+<!--vrViewer.wxml - VR全景查看器页面 -->
+<navigation-bar title="{{vrTitle}}" back="{{true}}" color="white" background="#C80000"></navigation-bar>
+
+<view class="vr-viewer-container">
+  <!-- 使用web-view加载VR全景 -->
+  <web-view src="{{vrUrl}}" wx:if="{{vrUrl}}"></web-view>
+</view>
+

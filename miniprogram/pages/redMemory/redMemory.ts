@@ -31,19 +31,29 @@ Component({
         name: "胡公冕",
         title: "红十三军军长",
         desc: "中国工农红军第十三军的主要创建者和领导人...",
-        avatar: "/images/hero1.jpg"
+        avatar: "/images/hero1.jpg",
+        qrCode: "/images/qr-hero1.jpg"
       },
       {
         name: "金贯真",
         title: "红十三军政委",
         desc: "红十三军的重要领导人之一...",
-        avatar: "/images/hero2.jpg"
+        avatar: "/images/hero2.jpg",
+        qrCode: "/images/qr-hero2.jpg"
       },
       {
         name: "陈文杰",
         title: "红十三军政治部主任",
         desc: "为红十三军的组织建设做出重要贡献...",
-        avatar: "/images/hero3.jpg"
+        avatar: "/images/hero3.jpg",
+        qrCode: "/images/qr-hero3.jpg"
+      },
+      {
+        name: "雷高升",
+        title: "红十三军重要领导人",
+        desc: "红十三军的重要领导人之一，为革命事业做出了重要贡献...",
+        avatar: "/images/hero4.jpg",
+        qrCode: "/images/qr-hero4.jpg"
       }
     ]
   },
@@ -54,10 +64,9 @@ Component({
       const index = e.currentTarget.dataset.index
       const hero = this.data.heroList[index]
       
-      wx.showModal({
-        title: hero.name,
-        content: hero.desc,
-        showCancel: false
+      // 跳转到英雄详情页面，传递英雄信息
+      wx.navigateTo({
+        url: `/pages/heroDetail/heroDetail?name=${encodeURIComponent(hero.name)}&title=${encodeURIComponent(hero.title)}&desc=${encodeURIComponent(hero.desc)}&avatar=${hero.avatar}&qrCode=${hero.qrCode || '/images/qr-placeholder.jpg'}`
       })
     },
 

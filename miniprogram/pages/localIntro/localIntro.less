@@ -138,6 +138,34 @@
   width: 240rpx;
   height: 180rpx;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 不同地标的背景颜色 - 使用nth-child选择器 */
+.landmark-item:nth-child(1) .landmark-image {
+  background: linear-gradient(135deg, #C80000 0%, #8B0000 50%, #DC143C 100%);
+}
+
+.landmark-item:nth-child(2) .landmark-image {
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+}
+
+.landmark-item:nth-child(3) .landmark-image {
+  background: linear-gradient(135deg, #654321 0%, #8B4513 50%, #A0522D 100%);
+}
+
+.landmark-item:nth-child(4) .landmark-image {
+  background: linear-gradient(135deg, #C80000 0%, #FF6B6B 50%, #FFA07A 100%);
+}
+
+.landmark-icon {
+  font-size: 80rpx;
+  opacity: 0.9;
+  filter: drop-shadow(0 2rpx 8rpx rgba(0, 0, 0, 0.2));
 }
 
 .landmark-info {

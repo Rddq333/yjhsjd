@@ -1,0 +1,39 @@
+<!--heroDetail.wxml - 英雄详情页面：显示英雄信息和视频二维码 -->
+<navigation-bar title="{{heroName}}" back="{{true}}" color="white" background="#C80000"></navigation-bar>
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="hero-detail-container">
+    <!-- 英雄信息卡片 -->
+    <view class="hero-info-card">
+      <image class="hero-avatar-large" src="{{heroAvatar}}" mode="aspectFit"></image>
+      <view class="hero-info-content">
+        <text class="hero-name-large">{{heroName}}</text>
+        <text class="hero-title-large">{{heroTitle}}</text>
+        <text class="hero-desc-large">{{heroDesc}}</text>
+      </view>
+    </view>
+
+    <!-- 视频二维码区域 -->
+    <view class="qr-code-section">
+      <view class="section-title">观看视频</view>
+      <view class="qr-code-card">
+        <view class="qr-code-tips">
+          <text class="tips-text">扫描下方二维码观看英雄人物视频</text>
+        </view>
+        <view class="qr-code-wrapper" bindtap="recognizeQRCodeFromImage">
+          <image class="qr-code-image" src="{{qrCodeImage}}" mode="aspectFit" show-menu-by-longpress="{{true}}"></image>
+          <view class="qr-code-overlay">
+            <text class="overlay-text">点击识别二维码</text>
+          </view>
+        </view>
+        <button class="scan-button scan-button-album" bindtap="scanQRCodeFromAlbum">
+          <text class="scan-button-text">从相册选择识别</text>
+        </button>
+        <view class="qr-code-instruction">
+          <text class="instruction-text">点击二维码图片或使用扫码功能识别</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+

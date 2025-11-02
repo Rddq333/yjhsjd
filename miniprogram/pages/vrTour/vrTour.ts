@@ -6,28 +6,10 @@ Component({
     // VR场景列表
     vrList: [
       {
-        title: "红十三军纪念馆",
+        title: "永嘉红十三军军部旧址",
         desc: "全面了解红十三军的历史与发展",
         image: "/images/vr-scene1.jpg",
-        url: "https://example.com/vr/scene1" // VR全景链接
-      },
-      {
-        title: "革命遗址",
-        desc: "实地参观革命历史遗址",
-        image: "/images/vr-scene2.jpg",
-        url: "https://example.com/vr/scene2"
-      },
-      {
-        title: "英雄广场",
-        desc: "瞻仰英雄纪念碑",
-        image: "/images/vr-scene3.jpg",
-        url: "https://example.com/vr/scene3"
-      },
-      {
-        title: "文化展厅",
-        desc: "浏览红色文化展品",
-        image: "/images/vr-scene4.jpg",
-        url: "https://example.com/vr/scene4"
+        url: "https://www.720yun.com/t/39vkOwdmr7m?scene_id=54602433" // VR全景链接
       }
     ]
   },
